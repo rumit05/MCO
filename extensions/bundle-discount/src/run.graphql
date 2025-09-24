@@ -1,0 +1,27 @@
+query RunInput {
+  cart {
+    lines {
+      id
+      quantity
+      cost {
+        totalAmount {
+          amount
+        }
+      }
+      bundleAttribute: attribute(key: "_bundle") {
+        key
+        value
+      }
+      freeBundleAttribute: attribute(key: "_free_bundle_product") {
+        key
+        value
+      }
+      merchandise {
+        ... on ProductVariant {
+          id
+          title
+        }
+      }
+    }
+  }
+}
