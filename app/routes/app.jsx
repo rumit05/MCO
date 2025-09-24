@@ -17,7 +17,7 @@ export const loader = async ({ request }) => {
   // Fetch all Shopify Functions to get the correct functionId
   const functionData = await getFunctionId(admin.graphql);
   const functionNode = functionData?.data?.shopifyFunctions?.nodes?.[0]; // take first for example
-  const functionId = functionNode?.id || "019975bf-d3b8-7de9-886a-a573a4221ccc"; // fallback to hardcoded if missing
+  const functionId = "019975bf-d3b8-7de9-886a-a573a4221ccc"; // fallback to hardcoded if missing
 
   // Create or fetch the bundle discount
   const bundleDiscountResult = await createBundleDiscount(admin.graphql, functionId);

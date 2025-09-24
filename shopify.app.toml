@@ -2,7 +2,7 @@
 
 client_id = "352e3b904aaefa00ca6e2c3b836880ba"
 name = "Mcobeauty Us"
-application_url = "https://example.com"
+application_url = "https://implementation-cgi-consultancy-really.trycloudflare.com"
 embedded = true
 
 [build]
@@ -12,7 +12,7 @@ automatically_update_urls_on_dev = true
 api_version = "2025-10"
 
   [[webhooks.subscriptions]]
-  topics = [ "app/uninstalled" ]
+  topics = [ "app/uninstalled" ] 
   uri = "/webhooks/app/uninstalled"
 
   [[webhooks.subscriptions]]
@@ -24,4 +24,4 @@ api_version = "2025-10"
 scopes = "write_products,read_products,read_orders,write_orders,read_cart_transforms,write_cart_transforms,write_discounts,read_discounts"
 
 [auth]
-redirect_urls = [ "https://example.com/api/auth" ]
+redirect_urls = [ "https://implementation-cgi-consultancy-really.trycloudflare.com/api/auth" ]
