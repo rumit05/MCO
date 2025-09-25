@@ -2,7 +2,7 @@
 
 client_id = "352e3b904aaefa00ca6e2c3b836880ba"
 name = "Mcobeauty Us"
-application_url = "https://implementation-cgi-consultancy-really.trycloudflare.com"
+application_url = "https://cricket-goal-reflections-coat.trycloudflare.com"
 embedded = true
 
 [build]
@@ -24,4 +24,4 @@ api_version = "2025-10"
 scopes = "write_products,read_products,read_orders,write_orders,read_cart_transforms,write_cart_transforms,write_discounts,read_discounts"
 
 [auth]
-redirect_urls = [ "https://implementation-cgi-consultancy-really.trycloudflare.com/api/auth" ]
+redirect_urls = [ "https://cricket-goal-reflections-coat.trycloudflare.com/api/auth" ]

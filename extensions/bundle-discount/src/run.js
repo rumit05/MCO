@@ -61,7 +61,7 @@ const EMPTY_DISCOUNT = {
           discounts.push({
             targets: [{ cartLine: { id: freeLineId } }],
             value: { percentage: { value: 100 } },
-            message: "Complimentary toiletry bag",
+            message: "GIFT WITH PURCHASE",
           });
         }
       }
@@ -79,7 +79,7 @@ const EMPTY_DISCOUNT = {
           discounts.push({
             targets: [{ cartLine: { id: lowestLine.id } }],
             value: { percentage: { value: 100 } },
-            message: "One Lowest product free",
+            message: "FREE",
           });
         }
       }
@@ -114,7 +114,7 @@ const EMPTY_DISCOUNT = {
                   value: discountValue,
                 },
               },
-              message: "One Lowest product free",
+              message: "FREE",
             },
           ],
           discountApplicationStrategy: DiscountApplicationStrategy.First,
